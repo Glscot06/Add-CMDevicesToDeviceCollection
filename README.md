@@ -2,46 +2,6 @@
 ## Overview
 The Add-ToDeviceCollection PowerShell function allows administrators to efficiently add devices to an SCCM (System Center Configuration Manager) device collection. This script supports various input methods, such as individual computer names, CSV files, comma-separated lists, and queries. It also has error-handling mechanisms and can create device collections if they don't exist when using the -Force parameter.
 
-### Parameters
-$SCCMServer: (string)
-The SCCM server name.
-
-$SiteCode: (string)
-The site code of the SCCM server.
-
-$ComputerName: (string)
-The name of the computer to be added to the device collection.
-
-$TextFilePath: (string)
-The path to a text file containing computer names to be added to the device collection.
-
-$CSVFilePath: (string)
-The path to a CSV file containing computer names to be added.
-
-$CSVColumnName: (string)
-The name of the column in the CSV file that contains the computer names.
-
-$CommaSeparatedList: (string)
-A comma-separated list of computer names to be added to the device collection.
-
-$Query: (string)
-A WQL query to be used to create a query-based membership rule.
-
-$QueryName: (string)
-The name of the query rule when using the $Query parameter.
-
-$CollectionName: (string)
-The name of the device collection to add the computers or queries to.
-
-$Force: (switch)
-Forces the creation of a device collection if it doesn't already exist.
-
-$LimitingCollection: (string)
-The limiting collection name to be used when creating a new device collection with the -Force parameter.
-
-$RefreshType: (string)
-The refresh type for the device collection. Valid options are Both, Continuous, Manual, None, Periodic.
-
 ### Functionality
 *Adding a Single Computer*
 <br>
